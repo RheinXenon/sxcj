@@ -8,6 +8,8 @@ import SliderAndButton from "./components/SliderAndButton.vue"
 import VideoPart from "@/components/VideoPart.vue";
 import ImagePart from "@/components/ImagePart.vue";
 import Output1 from "@/components/Output1.vue";
+import Carousel from "@/components/Carousel.vue";
+import Output2 from "@/components/Output2.vue";
 </script>
 
 <template>
@@ -19,6 +21,7 @@ import Output1 from "@/components/Output1.vue";
       <el-container>
         <el-aside width="200px">
           <Aside></Aside>
+          <Carousel></Carousel>
         </el-aside>
         <el-container>
           <el-main>
@@ -30,9 +33,12 @@ import Output1 from "@/components/Output1.vue";
                 <SliderAndButton></SliderAndButton>
                 <el-divider></el-divider>
               </el-col>
-              <el-col :span="18" ><div class="grid-content ep-bg-purple" />
-                <ImagePart></ImagePart>
+              <el-col :span="18" >
+<!--                <ImagePart></ImagePart>-->
+                <VideoPart></VideoPart>
                 <Output1></Output1>
+                <Output2></Output2>
+
               </el-col>
             </el-row>
           </el-main>

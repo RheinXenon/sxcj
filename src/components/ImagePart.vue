@@ -6,7 +6,7 @@
 
 <script setup>
 import { ref } from "vue";
-import localImage from "@/resources/1.png";
+import localImage from "@/resources/1.gif";
 const localImageUrl = ref(localImage);
 </script>
 
